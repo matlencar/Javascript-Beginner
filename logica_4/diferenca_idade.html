@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //Variaveis
+    var irmao_x = 18;
+    var irmao_y = 20;
+
+    //Função sem parametro
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    //Função com paramtro
+    function mostra (mensagem) {
+        document.write("<h3>" + mensagem +"</h3>");
+        pulaLinha();
+    }
+
+    function resultado(res) {
+       document.write("<h4>" + res + "</h4>"); 
+       
+    }
+
+    mostra("A diferença de idade entre os irmãos");
+
+    resultado("Diferença de idade é de " + (irmao_y - irmao_x) + " anos entre eles.");
+
+
+
+</script>
