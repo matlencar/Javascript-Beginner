@@ -2,24 +2,36 @@
 
 <script>
    
+   //Funcão sem parametro
+   function pulaLinha() {
+      document.write("<br><br>");
+   }
+   
+   //Função com parametro
+   function mostra(frase) {
+      document.write(frase);
+      pulaLinha();
+   }
+
    var ano = 2016;
 
-   document.write("Flavio nasceu em: " + (ano - 1977) + " anos" + "<br>");
-   document.write("Joaquim nasceu em: " + (ano - 1996) + " anos" + "<br>");
+   mostra("Flavio nasceu em: " + (ano - 1977) + " anos" );
+
+   mostra("Joaquim nasceu em: " + (ano - 1996) + " anos" );
 
    ano = 2017;
-   document.write("Barney nasceu em: " + (ano - 1976) + " anos" + "<br>");
+   mostra("Barney nasceu em: " + (ano - 1976) + " anos" );
 
    var idadeFlavio = 39;
    var idadeJoaquim = 20;
-   var idadeNarney = 41;
+   var idadeBarney = 41;
 
-   var media = ((idadeFlavio + idadeJoaquim + idadeNarney) / 3);
+   var media = ((idadeFlavio + idadeJoaquim + idadeBarney) / 3);
 
-   document.write("A media das idades é: " + Math.round(media) + "<br>");
+   mostra("A media das idades é: " + Math.round(media));
 
    var nome = "Flavio";
 
-   document.write("A idade de " + nome + " é " + idadeFlavio);
+   mostra("A idade de " + nome + " é " + idadeFlavio);
 
 </script>
